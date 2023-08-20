@@ -1,12 +1,12 @@
-```python
 from selenium import webdriver
 import time
 
 # Inisialisasi browser
+options=webdriver.ChromeOptions()
 driver = webdriver.Chrome()
 
-# Buka halaman aplikasi booking
-driver.get("URL_APLIKASI_BOOKING")
+# Buka halaman aplikasi booking, contoh menggunakan shopee
+driver.get(https://shopee.co.id)
 
 # Test Scenario 1: Memastikan harga sesuai untuk tanggal dan waktu booking
 def test_check_booking_price():
@@ -40,4 +40,3 @@ test_check_double_booking()
 
 # Menutup browser setelah selesai
 driver.quit()
-````
